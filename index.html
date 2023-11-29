@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+    .navigation_button{
+        font-family: "Aria Black", sans-serif;
+        padding: 25px;
+    }
+    .highlight{
+        background-color: none;
+        color: white;
+        box-shadow: 0 5px 0; 
+        border-radius: 4px 4px;
+        transition-duration: 0.4s;
+    }
+    .highlight:hover{
+        background-color: #CAC8C6;
+        color: white;
+        font-size: 24px;
+        box-shadow: 0 0 1px 3px;
+    }
+    .highlight2{
+        transition-duration: 0.4s;
+    }
+    .highlight2:hover{
+        background-color: #CAC8C6;
+        border-radius: 4px 4px;
+        color: white;
+        box-shadow: 0 0 1px 3px;
+        font-size: 24px;
+    }
+    .highlight3{
+        transition-duration: 0.4s;
+    }
+    .highlight3:hover{
+        background-color: #CAC8C6;
+        border-radius: 4px 4px;
+        color: white;
+        box-shadow: 0 0 1px 3px;
+        font-size: 24px;
+    }
+    .home{
+        background-color: none;
+        
+    }
+    .fb{
+        height: 30px;
+        width: 30px;
+        margin: 5px 5px 0px;
+        transition-duration: 0.4s;
+    }
+    .fb:hover{
+        background-color: blue;
+        border-radius: 16px;
+        color: white;
+        box-shadow: 0 0 1px 3px;
+    }
+    .ig{
+        height: 30px;
+        width: 30px;
+        transition-duration: 0.4s;
+    }
+    .ig:hover{
+        background-color: red;
+        border-radius: 8px 8px;
+        color: white;
+        box-shadow: 0 0 1px 3px;
+    }
+    .x{
+        height: 30px;
+        width: 30px;
+        margin: 5px 5px 0px;
+        transition-duration: 0.4s;
+    }
+    .x:hover{
+        background-color: black;
+        border-radius: 16px;
+        color: white;
+    }
+    a{
+        margin: 15px;
+        padding: 5px;
+        background: none;
+        
+    }
+    header{
+        height: 18px;
+        position: sticky;
+    }
+    body{
+        background-color: #001F27;
+    }
+    .body1{
+        background-image: url(vash.gif);
+        filter: invert(100%);
+        opacity: 0.3;
+        background-size: 100%;
+        height: 95%;
+        width: 98.9%;
+        position: absolute;
+        z-index: -10;
+        background-attachment: fixed;
+    }
+    .backcolor{
+        background-color: none;
+        padding: 10px;
+        color: white;
+        box-shadow: 0 0 5px 2px;
+        text-align: left;
+        font-family: "Arial Black", sans-serif;
+        font-size: 26px;
+        border-radius: 4px 4px;
+        transition-duration: 0.2s;
+    }
+    .backcolor:hover{
+        box-shadow: 0 0 7px 7px;
+        border-radius: 2px 2px;
+    }   
+    .column1{
+        float: left;
+        width: 50%;
+        margin: 0px 5px 5px;
+        font-family: "Brush Script MT", cursive;
+        font-size: 70px;
+    }
+    .column2{
+        float: left;
+        width: 50%;
+        margin: 0px 5px 5px;
+        font-family: "Brush Script MT", cursive;
+        font-size: 70px;
+        overflow: hidden;
+        animation: animate 5s infinite;
+    }
+    @keyframes animate{        
+        0% { opacity: 0;
+        }
+        25% {
+            opacity: 0.3;
+        }
+        50% {
+            opacity: 1;
+        }
+        75% {
+            opacity: 0.3;
+
+        }
+        100% {
+            opacity: 0;
+        }
+    }   
+    .row1{
+        z-index: 10;
+        background-attachment: fixed;
+    }
+    .row1:after{
+        margin: 5px 5px 5px;
+        width: 50%;
+        display: flex;
+        float: right;
+        clear: both;
+    }
+    .mainp{
+        box-shadow: 0 0 5px 2px;
+        transition-duration: 0.2s;
+        z-index: -5px;
+    }
+    .mainp:hover{
+        box-shadow: 0 0 5px 3px;
+        color: whitesmoke;
+        border-radius: 6px 6px;
+    }
+    img.mainp{
+        transition-duration: 0.2s;
+    }
+    img.mainp:hover{
+        box-shadow: 0 0 7px 10px;
+        opacity: 2;
+    }
+    .mysoc{
+        font-family: "Arial Black", sans-serif;
+    }
+    .aboutme{
+        font-family: "Arial Black", sans-serif;
+    }
+    .vid{
+        padding: 30px;
+        box-shadow: 1px 5px 15px 10px;
+        color: black;
+        height: auto;
+        border-radius: 40px 40px;
+        border: inset #489875;
+        animation: blinking 3s infinite;
+    }
+    @keyframes blinking {
+        0%  {
+            background-color: rgb(187, 178, 178);
+
+        }
+        50% {
+            background-color: rgb(253, 253, 253);
+        }
+        100% {
+            background-color: rgb(187, 178, 178);
+        }
+    }   
+    footer{
+        background-color: none;
+        padding: 10px;
+        bottom: 100%;
+        font-family: "Arial Black", sans-serif;
+    }
+
+</style>
+    <title>Final Project</title>
+</head>
+
+<body>
+<img class="body1">
+
+    <div class="backcolor"> 
+                <!--This is the navigation bar of my code--> 
+        <p style="float: left; margin: 15px; color: white;">Tc
+            
+            <span style="color: yellow;">V</span><span style="color: yellow;">a</span><span style="color: red;">s</span><span style="color: red;">h</span>
+            
+            Everett Marshburn</p>
+
+        <header class="navigation_button" style="text-align: right; font-size: 18px;">
+            <a class="highlight" href="" style="text-decoration: none; color: white;">Home</a> <!--This is the -->
+            <a class="highlight2" href="Home.html" style="text-decoration: none; color: white;">IT111 Blogs</a>
+            <a class="highlight3" href="Flex.html" style="text-decoration: none; color: white;">Flex</a>
+        </header>
+        
+                <!--End of navigation bar-->
+    </div>
+
+                <!--Quote nga nag blink'2-->
+    <div class="quote" style="text-align: center; margin: 200px 50px 100px; color: white;">
+        <h1 class="column1"><u>Do small tasks,</u></h1>
+        <h1 class="column2"><u>to achieve big things!</u></h1>
+
+                <!--Image ni siya nga pa chuy'2-->
+        <div class="row1">
+            <img class="mainp" src="mainpic.jpg" alt="mainpic" style="width: 350px; margin: -100px 50px 100px; border-radius: 50%;">
+        </div>
+
+    </div>
+
+    <hr style="margin-top: 103px; width: auto;
+    ">
+
+
+
+                <!--Dinhi akoang mga likes-->
+    <div class="likesnd" style="text-align: center; color: white;">
+        <h1 class="column1" style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; font-size: 30px; margin: -3px 0 0;">Likes, Skills and Hobbies</h1>
+            <div class="column1" style="float: left; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; font-size: 24px">
+                  <hr style="width: 330px;">  
+                    <ul style="text-align: left; margin-left: 25%;">
+                    <li>
+                        I like to ride my bike
+                    </li>
+                    <li>
+                        I am a KarateDo practitioner
+                    </li>
+                    <li>
+                        I have great commmunication skills
+                    </li>
+                    </ul>  
+            </div>
+
+
+                        <!--Dinhi akoang mga dislikes-->
+        <div class="row1" style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; font-size: 30px;">
+            Dislikes and Weakness
+
+            <hr style="margin-top: 9px; width: 300px;">
+
+                <ol style="text-align: left; margin-left: 65%;">
+                <li style="font-size: 24px; margin-top: 0px; list-style-type: none;">
+                    1. Money management
+                </li>
+                <li style="font-size: 24px; margin-top: 0px; list-style-type: none;">
+                    2. Poor eyesight
+                </li>
+                <li style="font-size: 24px; margin-top: 0px; list-style-type: none;">
+                    3. Frequent brain-fogs
+                </li>    
+                </ol>
+
+        </div>
+        
+    </div>
+
+    <div>
+                    <!--Additional information nga ako-->
+    <section class="aboutme" style="color: white;">
+        
+        <h1 class="about" style="margin-left: 14%;">About Me</h1>
+        <hr style="width: 100px; margin-left: 14.5%; margin-top: -15px;">
+        <p class="aboutp" style="margin-left: 15%; margin-right: 75px; width: 70%; text-indent: 50px;">
+        I am Tc Vash Everett Marshburn. Looking at the above column summarizes what are my likes, skill, and hobbies; you can also
+        see my dislikes and weaknesses.
+        </p>        
+        <p class="aboutp" style="margin-left: 15%; margin-right: 75px; width: 70%; text-indent: 50px;">
+           My name was also taken from the famous anime called "Tri-Gun". Where the main
+           character is known as <i>Vash the Stampede</i>. He is goofy but when
+           he gets serious then God-like miracles could happen and people are left
+           confused on how such things would happen.
+        </p>
+    </section>
+
+    <h3 class="mysoc" style="text-align: center; color: white; padding: 20px;">
+        My socials
+    </h3>
+    <h3 class="buttons" style="text-align: center; background-color: none; padding: 20px; margin-top: -50px;">
+
+                    <!--Dinhi akoang mga social icons ug social pages-->
+        
+        <img class="fb" src="fblogo.jpg" <button class="fb" style="color: blue; box-shadow: 0 0 20px;" type="button" onclick="window.open('https://www.facebook.com/vash.marshburn')"></button>
+        <img class="ig" src="iglogo.jpg" <button class="ig" style="color: #FC53AA; box-shadow: 0 0 20px;" type="button" onclick="window.open('https://instagram.com/vaaassssh?igshid=YTQwZjQ0NmI0OA==')"></button>
+        <img class="x" src="xlogo.png" <button class="x" style="color: grey; box-shadow: 0 0 20px;" type="button" onclick="window.open('https://x.com/marshburn_vash?t=YP997ET4zCGOSMfEOd-y0A&s=09')"></button>
+        
+    </h3>
+    </div>
+
+        <h2> <i style="color: white; text-align: justify; margin-left: 14%;">How do I see myself 8 years from now?</i>    </h2>
+
+
+                    <!--Dinhi akoang video naka butang-->
+        <video class="vid" width="640" height="440" style="margin-left: 27%;" controls>
+            <source src="test.mp4">
+            8 years from now mp4
+        </video>
+</body>
+<hr>
+
+            <!--Footer dayun ni nako-->
+<footer style="text-align: center; color: white; font-size: 11px;">
+    
+    <h4> &#169; Marshburn, TVE.
+    This web page serves as the Final Output Activity for the school year 2023-2024</h4>
+
+</footer>
+</html>
